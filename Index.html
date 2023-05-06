@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de gastos</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="div-header">
+            <h1>DinDinBank.</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div id="coletaDados">
+                    <h2>Adicionar Transação</h2>
+                    <label id="labelValor">Valor</label>
+                    <input type="number" id="valor" required>
+                    <label for="descricaoGastos" id="labelDescricao">Descrição</label>
+                    <input type="text" id="descricao"> <br>
+                    <input type="Radio" name="tipoDado" id = "entrada" checked><label for="tipoDado">Entrada</label> 
+                    <input type="Radio" name="tipoDado" id="saida"><label for="tipoDado">Saída</label> <br>
+                    <Button onclick="gerenciarGastos()" id="adicionar">Adicionar</Button>
+                </div>
+                <div id="saldo">
+                    <h3>Saldo Atual</h3>
+                    <p id="valorDisponivel">R$0.00</p>
+                </div>
+                <div id="transacoes">
+                    <h3>Transações</h3>
+                    <select name="" id="listaGastos" size="6">
+                    </select>
+                </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="Script.js"></script>
+</body>
+</html>
